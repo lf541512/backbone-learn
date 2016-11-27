@@ -1,0 +1,102 @@
+#todo-list li .destroy:after {
+    content: '×';
+}
+#todo-list li:hover .destroy {
+    display: block;
+}
+#todo-list li .destroy {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    margin: auto 0;
+    font-size: 30px;
+    color: #cc9a9a;
+    margin-bottom: 11px;
+    transition: color 0.2s ease-out;
+}
+#todo-list li {
+    position: relative;
+    font-size: 24px;
+    border-bottom: 1px solid #ededed;
+}
+#todo-list .view,#todo-list .editting .edit{
+    display: block
+}
+#todo-list .editting  .view,#todo-list .edit{
+display: none;
+}
+.hidden{
+    display: none;
+}
+#filters .selected{
+    color: red;
+}
+#filters {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+#filters li {
+    display: inline;
+}
+ul,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#footer {
+    color: #777;
+    padding: 10px 15px;
+    height: 20px;
+    text-align: center;
+    border-top: 1px solid #e6e6e6;
+}
+#footer:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    overflow: hidden;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 
+    0 8px 0 -3px #f6f6f6, 0 9px 1px -3px rgba(0, 0, 0, 0.2), 
+    0 16px 0 -6px #f6f6f6, 0 17px 2px -6px rgba(0, 0, 0, 0.2);
+}
+#todoapp {
+    background: #fff;
+    margin: 130px 0 40px 0;
+    position: relative;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+}
+#todo-count {
+    float: left;
+    text-align: left;
+}
+#clear-completed, html #clear-completed:active {
+    float: right;
+    line-height: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+}
+
+#todo-list li .toggle {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    position: absolute;
+    top: 0
+}
+#todo-list li label{
+        line-height: 40px;
+    height: 40px;
+    padding: 15px 60px 15px 15px;
+    margin-left: 12px;
+}
